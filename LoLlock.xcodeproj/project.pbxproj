@@ -1,0 +1,295 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8E4F134815878BC700B1AA6F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E4F134715878BC700B1AA6F /* Cocoa.framework */; };
+		8E4F135215878BC700B1AA6F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8E4F135015878BC700B1AA6F /* InfoPlist.strings */; };
+		8E4F135415878BC700B1AA6F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4F135315878BC700B1AA6F /* main.m */; };
+		8E4F135815878BC700B1AA6F /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8E4F135615878BC700B1AA6F /* Credits.rtf */; };
+		8E4F135B15878BC700B1AA6F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4F135A15878BC700B1AA6F /* AppDelegate.m */; };
+		8E4F135E15878BC800B1AA6F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E4F135C15878BC800B1AA6F /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8E4F134315878BC700B1AA6F /* LoLlock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoLlock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E4F134715878BC700B1AA6F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		8E4F134A15878BC700B1AA6F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		8E4F134B15878BC700B1AA6F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		8E4F134C15878BC700B1AA6F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8E4F134F15878BC700B1AA6F /* LoLlock-Info.plist */ = {isa = PBXFileReference; path = "LoLlock-Info.plist"; sourceTree = "<group>"; };
+		8E4F135115878BC700B1AA6F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8E4F135315878BC700B1AA6F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8E4F135515878BC700B1AA6F /* LoLlock-Prefix.pch */ = {isa = PBXFileReference; path = "LoLlock-Prefix.pch"; sourceTree = "<group>"; };
+		8E4F135715878BC700B1AA6F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		8E4F135915878BC700B1AA6F /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		8E4F135A15878BC700B1AA6F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8E4F135D15878BC800B1AA6F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8E4F134015878BC700B1AA6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E4F134815878BC700B1AA6F /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E4F133815878BC700B1AA6F = {
+			isa = PBXGroup;
+			children = (
+				8E4F134D15878BC700B1AA6F /* LoLlock */,
+				8E4F134615878BC700B1AA6F /* Frameworks */,
+				8E4F134415878BC700B1AA6F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8E4F134415878BC700B1AA6F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E4F134315878BC700B1AA6F /* LoLlock.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E4F134615878BC700B1AA6F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E4F134715878BC700B1AA6F /* Cocoa.framework */,
+				8E4F134915878BC700B1AA6F /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8E4F134915878BC700B1AA6F /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E4F134A15878BC700B1AA6F /* AppKit.framework */,
+				8E4F134B15878BC700B1AA6F /* CoreData.framework */,
+				8E4F134C15878BC700B1AA6F /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		8E4F134D15878BC700B1AA6F /* LoLlock */ = {
+			isa = PBXGroup;
+			children = (
+				8E4F135915878BC700B1AA6F /* AppDelegate.h */,
+				8E4F135A15878BC700B1AA6F /* AppDelegate.m */,
+				8E4F135C15878BC800B1AA6F /* MainMenu.xib */,
+				8E4F134E15878BC700B1AA6F /* Supporting Files */,
+			);
+			path = LoLlock;
+			sourceTree = "<group>";
+		};
+		8E4F134E15878BC700B1AA6F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8E4F134F15878BC700B1AA6F /* LoLlock-Info.plist */,
+				8E4F135015878BC700B1AA6F /* InfoPlist.strings */,
+				8E4F135315878BC700B1AA6F /* main.m */,
+				8E4F135515878BC700B1AA6F /* LoLlock-Prefix.pch */,
+				8E4F135615878BC700B1AA6F /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8E4F134215878BC700B1AA6F /* LoLlock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E4F136115878BC800B1AA6F /* Build configuration list for PBXNativeTarget "LoLlock" */;
+			buildPhases = (
+				8E4F133F15878BC700B1AA6F /* Sources */,
+				8E4F134015878BC700B1AA6F /* Frameworks */,
+				8E4F134115878BC700B1AA6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LoLlock;
+			productName = LoLlock;
+			productReference = 8E4F134315878BC700B1AA6F /* LoLlock.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E4F133A15878BC700B1AA6F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 8E4F133D15878BC700B1AA6F /* Build configuration list for PBXProject "LoLlock" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8E4F133815878BC700B1AA6F;
+			productRefGroup = 8E4F134415878BC700B1AA6F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E4F134215878BC700B1AA6F /* LoLlock */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8E4F134115878BC700B1AA6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E4F135215878BC700B1AA6F /* InfoPlist.strings in Resources */,
+				8E4F135815878BC700B1AA6F /* Credits.rtf in Resources */,
+				8E4F135E15878BC800B1AA6F /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E4F133F15878BC700B1AA6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E4F135415878BC700B1AA6F /* main.m in Sources */,
+				8E4F135B15878BC700B1AA6F /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8E4F135015878BC700B1AA6F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E4F135115878BC700B1AA6F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8E4F135615878BC700B1AA6F /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E4F135715878BC700B1AA6F /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		8E4F135C15878BC800B1AA6F /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E4F135D15878BC800B1AA6F /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8E4F135F15878BC800B1AA6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8E4F136015878BC800B1AA6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8E4F136215878BC800B1AA6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LoLlock/LoLlock-Prefix.pch";
+				INFOPLIST_FILE = "LoLlock/LoLlock-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8E4F136315878BC800B1AA6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LoLlock/LoLlock-Prefix.pch";
+				INFOPLIST_FILE = "LoLlock/LoLlock-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E4F133D15878BC700B1AA6F /* Build configuration list for PBXProject "LoLlock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E4F135F15878BC800B1AA6F /* Debug */,
+				8E4F136015878BC800B1AA6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E4F136115878BC800B1AA6F /* Build configuration list for PBXNativeTarget "LoLlock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E4F136215878BC800B1AA6F /* Debug */,
+				8E4F136315878BC800B1AA6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8E4F133A15878BC700B1AA6F /* Project object */;
+}
