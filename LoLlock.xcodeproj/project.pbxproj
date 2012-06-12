@@ -13,6 +13,8 @@
 		8E4F135815878BC700B1AA6F /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8E4F135615878BC700B1AA6F /* Credits.rtf */; };
 		8E4F135B15878BC700B1AA6F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4F135A15878BC700B1AA6F /* AppDelegate.m */; };
 		8E4F135E15878BC800B1AA6F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E4F135C15878BC800B1AA6F /* MainMenu.xib */; };
+		8E4F136615878FE200B1AA6F /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4F136515878FE200B1AA6F /* AppController.m */; };
+		8EEF82EB1587FC36003A922D /* MouseWatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EEF82EA1587FC36003A922D /* MouseWatcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,14 +23,18 @@
 		8E4F134A15878BC700B1AA6F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		8E4F134B15878BC700B1AA6F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		8E4F134C15878BC700B1AA6F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		8E4F134F15878BC700B1AA6F /* LoLlock-Info.plist */ = {isa = PBXFileReference; path = "LoLlock-Info.plist"; sourceTree = "<group>"; };
+		8E4F134F15878BC700B1AA6F /* LoLlock-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LoLlock-Info.plist"; sourceTree = "<group>"; };
 		8E4F135115878BC700B1AA6F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8E4F135315878BC700B1AA6F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8E4F135515878BC700B1AA6F /* LoLlock-Prefix.pch */ = {isa = PBXFileReference; path = "LoLlock-Prefix.pch"; sourceTree = "<group>"; };
+		8E4F135515878BC700B1AA6F /* LoLlock-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LoLlock-Prefix.pch"; sourceTree = "<group>"; };
 		8E4F135715878BC700B1AA6F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		8E4F135915878BC700B1AA6F /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		8E4F135915878BC700B1AA6F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8E4F135A15878BC700B1AA6F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8E4F135D15878BC800B1AA6F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		8E4F136415878FE200B1AA6F /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
+		8E4F136515878FE200B1AA6F /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
+		8EEF82E91587FC36003A922D /* MouseWatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MouseWatcher.h; sourceTree = "<group>"; };
+		8EEF82EA1587FC36003A922D /* MouseWatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MouseWatcher.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +91,11 @@
 				8E4F135915878BC700B1AA6F /* AppDelegate.h */,
 				8E4F135A15878BC700B1AA6F /* AppDelegate.m */,
 				8E4F135C15878BC800B1AA6F /* MainMenu.xib */,
+				8E4F136415878FE200B1AA6F /* AppController.h */,
+				8E4F136515878FE200B1AA6F /* AppController.m */,
 				8E4F134E15878BC700B1AA6F /* Supporting Files */,
+				8EEF82E91587FC36003A922D /* MouseWatcher.h */,
+				8EEF82EA1587FC36003A922D /* MouseWatcher.m */,
 			);
 			path = LoLlock;
 			sourceTree = "<group>";
@@ -167,6 +177,8 @@
 			files = (
 				8E4F135415878BC700B1AA6F /* main.m in Sources */,
 				8E4F135B15878BC700B1AA6F /* AppDelegate.m in Sources */,
+				8E4F136615878FE200B1AA6F /* AppController.m in Sources */,
+				8EEF82EB1587FC36003A922D /* MouseWatcher.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +300,7 @@
 				8E4F136315878BC800B1AA6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
