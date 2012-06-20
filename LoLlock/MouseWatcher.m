@@ -105,6 +105,7 @@ static CGEventRef MouseMoveCallback(CGEventTapProxy proxy,
         lockToScreen = [NSScreen mainScreen];
         lockToRect = [lockToScreen frame];
         CGEventMask eventMask = CGEventMaskBit(kCGEventMouseMoved);
+        CGSetLocalEventsSuppressionInterval(0.0);
         eventTap = CGEventTapCreate(kCGSessionEventTap, kCGHeadInsertEventTap, 0,
                                     eventMask, MouseMoveCallback, self);
         if (!eventTap)
