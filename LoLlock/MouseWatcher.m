@@ -84,7 +84,9 @@ static CGEventRef MouseMoveCallback(CGEventTapProxy proxy,
             target.x = snapTo(point.x, lockToRect.origin.x, lockToRect.size.width);
             target.y = snapTo(point.y, lockToRect.origin.y, lockToRect.size.height);
             if (point.x != target.x || point.y != target.y) {
+            	CGSetLocalEventsSuppressionInterval(0.0);
                 CGWarpMouseCursorPosition(target);
+                CGSetLocalEventsSuppressionInterval(0.25);
             }
 		}
 		[pool drain];
@@ -105,7 +107,6 @@ static CGEventRef MouseMoveCallback(CGEventTapProxy proxy,
         lockToScreen = [NSScreen mainScreen];
         lockToRect = [lockToScreen frame];
         CGEventMask eventMask = CGEventMaskBit(kCGEventMouseMoved);
-        CGSetLocalEventsSuppressionInterval(0.0);
         eventTap = CGEventTapCreate(kCGSessionEventTap, kCGHeadInsertEventTap, 0,
                                     eventMask, MouseMoveCallback, self);
         if (!eventTap)
