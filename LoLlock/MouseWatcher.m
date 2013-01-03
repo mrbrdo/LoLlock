@@ -7,6 +7,7 @@
 //
 
 #import "MouseWatcher.h"
+#import <ApplicationServices/ApplicationServices.h>
 
 
 @interface MouseWatcher ()
@@ -106,7 +107,25 @@ static CGEventRef MouseMoveCallback(CGEventTapProxy proxy,
     {
         lockToScreen = [NSScreen mainScreen];
         lockToRect = [lockToScreen frame];
-        CGEventMask eventMask = CGEventMaskBit(kCGEventMouseMoved);
+
+        NSArray *l = (NSArray *)CGWindowListCopyWindowInfo(kCGWindowListOptionOnScreenOnly | kCGWindowListExcludeDesktopElements, kCGNullWindowID);
+        for (int i = 0; i < [l count]; i++) {
+            NSDictionary *d = [l objectAtIndex: i];
+            NSRect r;
+            CGRectMakeWithDictionaryRepresentation((CFDictionaryRef)[d objectForKey:(NSString*)kCGWindowBounds], &r);
+            NSNumber *pid = [d objectForKey:(NSString*)kCGWindowOwnerPID];
+            int pidNumber = [pid integerValue];
+            NSRunningApplication *app = [NSRunningApplication runningApplicationWithProcessIdentifier:pidNumber];
+            NSString *bundle = [app bundleIdentifier];
+            if ([bundle hasSuffix:@"wineskin.prefs"]) {
+                r.origin.x += 8;
+                r.origin.y += 30;
+                r.size.width -= 18;
+                r.size.height -= 35;
+                lockToRect = r;
+            }
+        }
+        CGEventMask eventMask = CGEventMaskBit(kCGEventMouseMoved) | CGEventMaskBit(kCGEventLeftMouseDragged) | CGEventMaskBit(kCGEventRightMouseDragged);
         eventTap = CGEventTapCreate(kCGSessionEventTap, kCGHeadInsertEventTap, 0,
                                     eventMask, MouseMoveCallback, self);
         if (!eventTap)
